@@ -24,6 +24,12 @@ Ext.define("seaturtle.view.faq", {
                 scrollable: 'vertical',
                 html: [
         "<div style='padding:20px 20px 50px 50px';>",
+        "The Winning Bidder:<br>",
+"•   Sea turtle hatchlings are collected on the third day after hatching, these are the weaker babies that you will help get to the sea<br>",
+"•   Arrive at designated nest area at 8AM<br>",
+"•   We will talk you through the whole process and have a short information session about the sea turtle release<br>",
+"•   Winning bidders are able to hold baby sea turtles and take pictures.<br><br><br>",
+
         "<p>1.&nbsp;<strong>How are sea turtles able to return to the same beach to nest?</strong><br />",
         "There are several theories as to how they locate this area, but none have yet been proven. The most common theories are:</p>",
         "<p> The newest theory on how sea turtles navigate is that they can detect both the angle and intensity of the earth&#39;s magnetic field. Using these two characteristics, a sea turtle may be able to determine its latitude and longitude, enabling it to navigate virtually anywhere. Early experiments seem to show that sea turtles have the ability to detect magnetic fields. Whether they actually use this ability to navigate is the next idea being investigated.</p>",

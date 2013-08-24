@@ -7,7 +7,9 @@ Ext.define("seaturtle.view.hatchlings", {
 
     config: {
                 styleHtmlContent: true,
-                scrollable: true,
+                height:  1200,
+                layout: 'vbox',
+                scrollable: 'vertical',
                 html: [
                     "<div style='padding:20px 20px 20px 50px';>",
                     "       <p>             ",

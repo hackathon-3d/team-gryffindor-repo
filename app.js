@@ -25,7 +25,7 @@ Ext.application({
     ],
 
     controllers: [
-        //'Login'
+        'Home'
     ],
    
     views: [

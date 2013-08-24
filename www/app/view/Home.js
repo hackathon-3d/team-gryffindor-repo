@@ -16,10 +16,16 @@ Ext.define('seaturtle.view.Home', {
         id: 'mainNav',
         items: [
         {
-            xtype: 'nestedlist',
             title: 'Home',
             iconCls: 'home',
+            xtype: 'splash'
+        },
+        {
+            xtype: 'nestedlist',
+            title: 'News',
+            iconCls: 'rss_black2',
             displayField: 'title',
+            html: '<br><br><div align="center"><iframe src="resources/Seaturtle1.animproj_export/index.html" style="border: 20px solid #CBCGD6; -moz-border-radius: 5px;-webkit-border-radius: 5px">',
             store: {
                     type: 'tree',
 

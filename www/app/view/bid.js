@@ -22,7 +22,7 @@ Ext.define("seaturtle.view.bid", {
                 layout: 'vbox',
                 scrollable: 'vertical',
                 html: [
-                "<div style='padding:20px 20px 20px 50px';>",
+                "<div style='padding:20px 20px 20px 50px';><text align='center'>",
                 "<p><text-align=center>Our latest sea turtle nest hatched August 24th on Folly Beach.<br>",
                 "125 baby sea turtles made thier way to the ocean.<br>",
                 "Our highest donar will be notified and invited to join<br>",

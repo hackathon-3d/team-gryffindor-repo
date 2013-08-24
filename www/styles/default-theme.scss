@@ -1,11 +1,11 @@
 $base-color: lighten(saturate(#47abb8, 10%), 20%);
-$active-color: darken(#47abb8, 20%);
+$active-color: lighten(saturate(#f38411, 10%), 20%);
 $page-bg-color: #FFFFFF;
 $base-gradient:'matte';
 $font-family: sans-serif;
 $tabs-radius: .25em;
-$alert-color: #10394e;
-$confirm-color: lighten(saturate(#38a3e9, 10%), 20%);
+$alert-color: #f38411;
+$confirm-color: lighten(saturate(#f38411, 10%), 20%);
 
 
 @import 'sencha-touch/default/all';
@@ -98,4 +98,13 @@ background-image: linear-gradient(top, #f38411,#f38411 3%,#f38411);
 }
 .x-button {
 color: #fff;
+}
+
+
+.x-tabbar-dark.x-docked-bottom .x-tab-active .x-button-icon {
+background-image: none;
+background-color: #f38411;
+background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f38411), color-stop(3%, #f38411), color-stop(100%, #f38411));
+background-image: -webkit-linear-gradient(top, #f38411,#f38411 3%,#f38411);
+background-image: linear-gradient(top, #f38411,#f38411 3%,#f38411);
 }

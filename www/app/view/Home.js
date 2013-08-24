@@ -70,7 +70,7 @@ Ext.define('seaturtle.view.Home', {
             //     }]
             // },
             {
-                title: 'Hatchlings',
+                title: 'Sightings',
                 iconCls: 'turtle',
                 xtype: 'hatchlings'
             },

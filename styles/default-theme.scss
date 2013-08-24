@@ -29,9 +29,9 @@ h1{
 @include sencha-form;
 @include sencha-msgbox;
 @include pictos-iconmask('help');
-@include pictos-iconmask('lock_closed');
-@include pictos-iconmask('warning_dotted');
-@include pictos-iconmask('chart2');
+@include pictos-iconmask('money');
+@include pictos-iconmask('turtle');
+@include pictos-iconmask('more');
 
 @mixin sencha-top-tabs {
 

@@ -25,18 +25,18 @@ Ext.define('seaturtle.view.Home', {
                 }]
             },
             {
-                title: 'Hatchling News',
-                iconCls: 'team',
+                title: 'Hatchlings',
+                iconCls: 'turtle',
                 xtype: 'hatchlings'
             },
             {
                 title: 'Bids',
-                iconCls: 'warning_dotted',
+                iconCls: 'money',
                 xtype: 'bids'
             },
             {
                 title: "F.A.Q's",
-                iconCls: 'chart2',
+                iconCls: 'help',
                 xtype: 'faq'
             },
         ]

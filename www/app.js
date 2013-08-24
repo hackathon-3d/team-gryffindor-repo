@@ -31,6 +31,7 @@ Ext.application({
    
     views: [
         //'Login',
+        'splash',
         'Home',
         'bid',
         'faq',

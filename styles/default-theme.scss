@@ -1,0 +1,101 @@
+$base-color: lighten(saturate(#f38411, 10%), 20%);
+$active-color: darken(#f38411, 20%);
+$page-bg-color: #FFFFFF;
+$base-gradient:'matte';
+$font-family: sans-serif;
+$tabs-radius: .25em;
+$alert-color: #3da7e2;
+$confirm-color: lighten(saturate(#38a3e9, 10%), 20%);
+
+
+@import 'sencha-touch/default/all';
+
+h1{
+	font-size:5em;color:#FFFFFF;
+}
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+@include pictos-iconmask('help');
+@include pictos-iconmask('lock_closed');
+@include pictos-iconmask('warning_dotted');
+@include pictos-iconmask('chart2');
+
+@mixin sencha-top-tabs {
+
+  .x-tabbar.x-docked-top {
+    border-bottom: .1em solid;
+    height: $global-row-height;
+    padding: 0 .8em;
+
+    .x-tab {
+      margin: .4em .2em;
+      padding: (($tabs-top-height - 1em) / 2) .8em;
+      height: $tabs-top-height;
+      border-radius: .25em;
+    }
+
+    @if ($include-highlights) {
+      .x-tab-active {
+        -webkit-box-shadow: rgba(#fff, .2) 0 .1em .1em, inset rgba(#000, .3) 0 .1em .2em;
+      }
+    }
+
+    .x-button-label {
+      font-size: .8em;
+      line-height: 1.2em;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+}
+
+.x-tabbar-dark .x-tab {
+  color: #FFFFFF;
+}
+
+.x-toolbar-dark .x-button{
+color: #FFFFFF;
+}
+
+.my-titlebar .x-title{
+  color:white;
+  font-family:sans-serif;
+}
+
+#checkoutbutton {
+  background-color: #daeef3;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border: 5px solid #358398;
+  padding: 5px;
+}
+
+//change color of text on login button and color of login button
+.x-button {
+color: #000;
+}
+
+//change color of to do button
+.x-button, .x-button.x-button-back:after, .x-button.x-button-forward:after, .x-toolbar .x-button, .x-toolbar .x-button.x-button-back:after, .x-toolbar .x-button.x-button-forward:after {
+background-image: none;
+background-color: #f38411;
+background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f38411), color-stop(3%, #f38411), color-stop(100%, #f38411));
+background-image: -webkit-linear-gradient(top, #f38411,#f38411 3%,#f38411);
+background-image: linear-gradient(top, #f38411,#f38411 3%,#f38411);
+}
+.x-button {
+color: #fff;
+}

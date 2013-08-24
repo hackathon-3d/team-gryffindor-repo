@@ -82,7 +82,7 @@ Ext.define('seaturtle.view.bid', {
                         width: 200,
                         margin:'0 0 0 -100px',
                         left:'50%',
-                        position: 'absolute',
+                        position: 'relative',
                         bottom: '20px',
                         height: '50px',
                         float: 'center',
@@ -90,51 +90,51 @@ Ext.define('seaturtle.view.bid', {
                              popup.showBy(btn);
                         }
                     },
-                    {
-                        xtype: 'button',
-                        text: 'Bid',
-                        iconAlign: 'right',
-                        width: 200,
-                        margin:'0 0 0 -100px',
-                        left:'50%',
-                        position: 'absolute',
-                        bottom: '20px',
-                        height: '50px',
-                        float: 'center',
-                        handler: function(btn){
-                             formPanel.show();
-                        }
-                    }
+                    // {
+                    //     xtype: 'button',
+                    //     text: 'Bid',
+                    //     iconAlign: 'right',
+                    //     width: 200,
+                    //     margin:'0 0 0 -100px',
+                    //     left:'50%',
+                    //     position: 'relative',
+                    //     bottom: '20px',
+                    //     height: '50px',
+                    //     float: 'center',
+                    //     handler: function(btn){
+                    //          //formPanel.show();
+                    //     }
+                    // }
                 ]
             }
         ]
     }
 });
 
-var formPanel = new Ext.Form('Ext.form.Panel', {
-    fullscreen: true,
+// var formPanel = new Ext.Create('Ext.form.Panel', {
+//     fullscreen: true,
 
-    items: [{
-        xtype: 'fieldset',
-        items: [
-            {
-                xtype: 'textfield',
-                name : 'name',
-                label: 'Name'
-            },
-            {
-                xtype: 'emailfield',
-                name : 'email',
-                label: 'Email'
-            },
-            {
-                xtype: 'passwordfield',
-                name : 'password',
-                label: 'Password'
-            }
-        ]
-    }]
-});
+//     items: [{
+//         xtype: 'fieldset',
+//         items: [
+//             {
+//                 xtype: 'textfield',
+//                 name : 'name',
+//                 label: 'Name'
+//             },
+//             {
+//                 xtype: 'emailfield',
+//                 name : 'email',
+//                 label: 'Email'
+//             },
+//             {
+//                 xtype: 'passwordfield',
+//                 name : 'password',
+//                 label: 'Password'
+//             }
+//         ]
+//     }]
+// });
 
 var popup = new Ext.Panel({
     floating: true,

@@ -16,11 +16,13 @@ Ext.define('seaturtle.view.Home', {
         id: 'mainNav',
         items: [
         {
+            cls:'my-titlebar',
             title: 'Home',
             iconCls: 'home',
             xtype: 'splash'
         },
         {
+            cls:'my-titlebar',
             xtype: 'nestedlist',
             title: 'News',
             iconCls: 'rss_black2',

@@ -1,97 +1,53 @@
-var bids = {
-    bids: [
-        {
-            name: "Cynthia Donatemuch",
-            amount: "100"
-        },
-        {
-            name: "John Q. Generous",
-            amount: "80"
-        },
-        {
-            name: "Steve Gives",
-            amount: "75"
-        },
-        {
-            name: "Bill Gates",
-            amount: "70"
-        }
-    ]
-}
-
-var bidTemp = "<tr><th>" +  + "</th><th>" +  + "</th></tr>";
-
-function getBids() {
-    var returnString = "";
-    for(var i = 0; i < bid.length; i++) {
-        returnString += "<tr><th>" + bid[i].name + "</th><th>" + bid[i].amount + "</th></tr>";
-        if (i == bid.length-1) {
-            return returnString;
-        }
-    }
-}
-
-function addBid(bid) {
-    bids.add(bid);
-}
-
-Ext.define('seaturtle.view.bid', {
-    extend: 'Ext.tab.Panel',
+Ext.define("seaturtle.view.bid", {
+    extend: 'Ext.Panel',
     xtype: 'bids',
     requires: [
         'Ext.TitleBar'
     ],
-
+    scroll: 'vertical',
     config: {
-        tabBarPosition: 'top',
-        tabBar: {
-            layout: {
-                pack: 'center'
-            } 
-        },
-        items: [
-            {
-                title: 'Save Our Sea Turtles',
-                style: 'background-color:#FFF',
+        items: [{
+                cls:'my-titlebar',
+                docked: 'top',
+                xtype: 'titlebar',
+                title: "Save Our Sea Turtles",
                 styleHtmlContent: true,
                 scrollable: true,
                 layout: {
                     type: 'vbox',
                     align: 'center'
-                },
-                items: [{
-                        styleHtmlContent: true,
-                        style: 'background-color:transparent',
-                        html: [
-                        "<div style='padding:20px 20px 20px 50px';>",
-"<p><text-align=center>Our latest sea turtle nest hatched August 24th on Folly Beach.<br>",
-"125 baby sea turtles made thier way to the ocean.<br>",
-"Our highest donar will be notified and invited to join<br>",
-"Folly Beach Sea Turtle Patrol to hand release the straglers<br>",
-"on August 27th.<br><br>Start the bidding!</p>"
+                }
+            },{
+                height:  '100%',
+                layout: 'vbox',
+                scrollable: 'vertical',
+                html: [
+                "<div style='padding:20px 20px 20px 50px';>",
+                "<p><text-align=center>Our latest sea turtle nest hatched August 24th on Folly Beach.<br>",
+                "125 baby sea turtles made thier way to the ocean.<br>",
+                "Our highest donar will be notified and invited to join<br>",
+                "Folly Beach Sea Turtle Patrol to hand release the straglers<br>",
+                "on August 27th.<br><br>Start the bidding!</p>"
 
-                        ].join(''),
-                        handler: function(event){
-                        }
-                    },
-                    {
-                        xtype: 'button',
-                        text: 'Donate',
-                        iconAlign: 'right',
-                        width: 200,
-                        margin:'0 0 0 -100px',
-                        left:'50%',
-                        position: 'absolute',
-                        bottom: '20px',
-                        height: '50px',
-                        float: 'left',
-                        handler: function(btn){
-                             popup.showBy(btn);
-                        }
-                    }
-                ]
-            }
-        ]
+                ].join(''),
+                handler: function(event){
+                }
+            },{
+                xtype: 'button',
+                text: 'Donate',
+                iconAlign: 'right',
+                width: 200,
+                margin:'0 0 0 -100px',
+                left:'50%',
+                position: 'absolute',
+                bottom: '20px',
+                height: '50px',
+                float: 'left',
+                handler: function(btn){
+                     popup.showBy(btn);
+                }
+            }]
+
     }
 });
 

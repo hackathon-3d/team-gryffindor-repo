@@ -4,9 +4,21 @@ Ext.define("seaturtle.view.hatchlings", {
     requires: [
         'Ext.TitleBar'
     ],
-
+    scroll: 'vertical',
     config: {
+        items: [
+            {
+                cls:'my-titlebar',
+                docked: 'top',
+                xtype: 'titlebar',
+                title: "2013 Nests and Tracks",
                 styleHtmlContent: true,
+                scrollable: true,
+                layout: {
+                    type: 'vbox',
+                    align: 'center'
+                }
+            },{
                 height:  1200,
                 layout: 'vbox',
                 scrollable: 'vertical',
@@ -15,12 +27,12 @@ Ext.define("seaturtle.view.hatchlings", {
                     "       <p>             ",
                     "       <table width=95% align=center border=0 cellspacing=0 cellpadding=3>             ",
                     "                       ",
-                    "       <tr bgcolor=#C8C8C8>              ",
+                    "       <font-size='6'><tr bgcolor=#f3b473>              ",
                     "       <th align=center>Track #</th>               ",
                     "       <!-- <th align=center>Date</th> -->             ",
                     "       <th align=left>Type</th>                ",
                     "       <th align=left>Species</th>             ",
-                    "       <!-- <th align=left>Location</th>               ",
+                    "       <!-- <th align=left>Location</th>   </font>            ",
                     "       <th align=left><font size=1>Relocated</font></th>               ",
                     "       <th align=left><font size=1>Relocated By</font></th> -->                ",
                     "       <th align=center># of Eggs</th>             ",
@@ -1489,5 +1501,8 @@ Ext.define("seaturtle.view.hatchlings", {
                     "       </p>                "
                 ].join('')
 
+
+            }
+        ]
     }
 });
